@@ -1,3 +1,5 @@
+# Sequence-to-sequence transformers-based DRS parser experiments
+
 This folder has the code to reproduce the results of the paper accepted to IWCS 2023, "Experiments in training transformer sequence-to-sequence DRS parsers".
 
 To run, conda installation is required. Conda activate and deactivate commands are needed. If you don't have conda, please intall anaconda from  https://www.anaconda.com/ .
