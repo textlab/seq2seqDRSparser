@@ -1,0 +1,9 @@
+#!/bin/bash
+condapath=$(conda info | grep -i 'base environment'|cut -d ":" -f 2 | cut -d " " -f 2)
+source $condapath/etc/profile.d/conda.sh
+conda activate ndrs400
+cur_dir=$(pwd)
+export PYTHONPATH=${cur_dir}/other_repos/Neural_DRS_400/DRS_parsing/:${PYTHONPATH}
+export PYTHONPATH=${cur_dir}/other_repos/Neural_DRS_400/DRS_parsing/evaluation/:${PYTHONPATH}
+"$@"
+conda deactivate

@@ -1,0 +1,12 @@
+        if args.remove_ill:
+            outp=""
+            with open (args.sentence_file, "r") as f1:
+                line = f1.readline()
+                counter =0
+                while line:
+                    if counter not in remove_idxs:
+                        outp+="\n" + line.strip()
+                    counter +=1
+                    line = f1.readline()
+            with open (args.sentence_file+".fil", "w") as f1:
+                f1.write(outp.strip())

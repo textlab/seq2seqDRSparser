@@ -1,0 +1,4 @@
+transformers==4.17.0
+tokenizers==0.12.1
+torch==1.5.0
+PyYAML==5.1.2
